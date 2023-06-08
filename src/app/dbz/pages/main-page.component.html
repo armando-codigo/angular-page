@@ -1,0 +1,16 @@
+<h1>DBZ RULES</h1>
+<hr />
+<h2>Personajes</h2>
+<hr />
+
+<div class="row">
+  <div class="col">
+    <dbz-list
+      [charactersChild]="charList"
+      (onDeleteChar)="onDeleteChar($event)"
+    ></dbz-list>
+  </div>
+  <div class="col">
+    <dbz-form (onCharAdd)="onNewChar($event)"></dbz-form>
+  </div>
+</div>
